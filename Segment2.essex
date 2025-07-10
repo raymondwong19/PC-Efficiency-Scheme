@@ -1,0 +1,26 @@
+**Machine Configurations and Estimates**
+
+* **Solution 1**: Thinkcentre M715q SFF, Ryzen PRO 2400G, 2x Tesla P4, Twin SD Cards
+	+ Cost: $50 (M715q) + $200 (twin P4) + $15 (PSU) + $20 (Riser) + $20 (Riser) + $10 (Power brick) + $20 (Dual SD cards/Reader) = $320
+	+ Performance: 3.8 TFLOPS, 11 CUs, GPU
+* **Solution 2**: Asrock A520M, Ryzen 5500GT, 500GB M.2 SSD, 1TB Old PNY SSD, 24GB Tesla M40
+	+ Cost: $120 (Motherboard) + $110 (CPU) + (64GB RAM is a gift) + $35 (M.2 SSD) + $330 (M40 and waterblock) = $595
+	+ Performance: 1400 MHz, 8 CUs, GPU 
+* **Solution 3**: Thinkcentre M715q SFF, Ryzen PRO 2400G, RX 570 8GB
+	+ Cost: $50 (Motherboard/CPU) + $50 (RX 570) + $10 (Power Brick) = $110
+
+**Threshold**
+
+* **Total Budget: $800**
+* **Current price: $1025**
+
+**Additional Components**
+
+* $20 (Router)
+* $50 (A311D Edge SBC)
+
+**Notes**
+
+* Estimated values and costs are subject to change.
+* Solutions are still in development and may require further refinement.
+* Component prices are approximate and based on used market values.
