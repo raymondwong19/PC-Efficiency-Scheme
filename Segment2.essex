@@ -19,6 +19,7 @@
 * $20 (Router)
 * $50 (A311D Edge SBC) ($1095 total)
 
+*** ***
 ---Adjusting for practical value---
    - The Tesla M40 has 24GB of GDDR5 allowing for 288GB/s, but it's pretty old and slow, especially the GPU itself. 
      The less than desirable apparently (12GB version) is selling on eBay for ~$70-80. The waterblock is 2 years old now.
@@ -27,7 +28,10 @@
      ($120 - $19 = $101)($110 - $17 = $93)
    - The value of the 8GB RX 570 hadn't really gone down much through.
      ($50 - $4 = $46)
-     (Total : $832)
+   - P4s are hitting EOL. However for their form factor they are quite efficient despite T4s being superior (and expensive).
+     ($200 - $32 - $168)
+     (Total : $800 as of 2025)
+*** ***
 
 **Notes**
 
