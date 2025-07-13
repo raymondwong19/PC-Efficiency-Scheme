@@ -11,14 +11,15 @@
 	+ Components: $80 PSU, 2x $50 V340L, $120 Radeon VII, $10 blower, $34 fans and shrouds, 1TB SSD ($40)
 + Price : $384
 	+ Status: Planned, awaiting implementation
-* **Solution 3**: Apple MacBook M1, used as a station
-	+ Cost: $600 (initial), $399 (current)
-	+ Performance: Benchmarked against RK3588S, ~2x faster
-	+ Limitations: No eGPU support, inefficient use
+-   * **Solution 3**: Apple MacBook M1, used as a station
+-   	   + Cost: $600 (initial), $399 (current)
+-	   + Performance: Benchmarked against RK3588S, ~2x faster
+-	   + Limitations: No eGPU support, inefficient use
+           (MacBook Air M1 has been removed)
 * **Solution 4**: Yoga 6 with RTX 2060 SUPER, for gaming
 	+ Cost: $150 (banged up,depreciated), $699 (new)
 	+ Performance: Gaming-capable, but limited by GPU and condition
-	+ Components: $30 (M.2 riser and tower heatsink), $200 (RTX 2060 SUPER)
+	+ Components: $30 (M.2 riser and tower heatsink), $200 (RTX 2060 SUPER)-$150 (Adjusted for low VRAM)
 
 **Challenges and Failures**
 
@@ -33,4 +34,4 @@
 * Component prices are approximate and based on used market values.
 * Doctrine involves using aftermarket software rather than relying on vendor support.
 * **Total Cost Limit: $1200**
-* **Current Cost : $2062**
+* **Current Cost : $1613**
