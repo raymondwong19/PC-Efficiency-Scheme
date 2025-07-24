@@ -1,0 +1,23 @@
+I have brought several rather futile $6 USB MJPEG UVC capture cards, the little ones with only HDMI input (no passthrough). And some HDMI splitters for it too.
+
+Original idea :
+1. A loopback USB VPU for smaller computers that do not have a working VPU or the ability to compress videos internally. May run headless and use ffmpeg to pipe the stream.
+Mostly for comparison of the quality of different GPUs like Mali and older AMD GPUs while gaming.
+2. An attempt to GameStream a Linux phone by recording it's screen with a webcam.
+3. Use a second machine via splitter to view the output on a display while capturing it with the USB capture card.
+
+Prices :
+6-8x? USB Capture Cards ($40-50)
+Amazon Basics and 2 other HDMI splitters ($12? $12 and one passive one for $7)
+Short HDMI cables ($20)
+Total : $100 or so
+
+Outcomes and Utility :
+USB Capture Card (14% utility ) : While it was used for screen capture a bunch of times, ultimately most went underused at best. MPV is unable to play back the raw JPEG stream and needed to be re-encoded by ffmpeg, making the streaming in particular ineffective.
+Recording works, but will also need recompression later. The chroma subsampling and max 1080p30 generally made the basic colors brighter (but losing detail).
+In order to use MPV (as guvcview is unwieldy), a LONG command line forcing --untimed, no buffer, and MJPEG lavf decoder is needed. Otherwise the latency is terrible and without MJPEG (raw video) it'd get 5FPS. Ultimately,
+the GPU comparison via gaming is considered a terrible idea and was changed to rendering to a video, which does not require any capture cards and is not realtime.
+Splitters (0% Utility) : The passive splitter had unstable/weak signal at best, and the powered ones were never used as intended for viewing the output while recording with a UVC capture card. They died before seeing any real use.
+Webcam (5% Utility) : Used to control the phone and record it's activity while remote a few times, as well as the desktops running, but it was not used for gaming due to latency and low resolution.
+
+So yeah, it's not a good idea and making setups convuluted isn't a good idea either.
