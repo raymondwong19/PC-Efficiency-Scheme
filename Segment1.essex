@@ -1,31 +1,27 @@
 **Machine Configurations and Estimates**
 
-* **Solution 1**: Ryzen 9 8700G, 32GB DDR5, Gigabyte B650 AV X v2
+* **Solution 1**: Ryzen 9 8700G, 32GB 64-bits DDR5, Gigabyte B650 AV X v2
 	+ Cost: $399 (initial bundle), -$200 (CPU sale), +$300 (iGPU swap) = $499
 	+ Performance: +9 TFLOPS GPU, 10% reduced CPU compared to 9700X
 	+ Issues: 2x16GB eGPU limitation due to MMIO and amdgpu bugs
 	+ Components: 12GB Tesla M40 with custom cooler ($70), MI50 ($130), 50cm riser ($25), 25cm M.2 riser ($25), Wathai Fan/Shroud ($25), Workhorse PSU ($40), 1TB/500GB SATA bridged SSDs ($70), Mellanox card ($15)
   + Price : $899
-* **Solution 2**: Custom motherboard, 2x V340L, 1x Radeon VII (MI50), 1TB SSD
-	+ Cost: Estimated 
+* **Solution 2**: Xeon W-2123, 64GB 72-bits DDR4, 2x V340L, 1x Radeon VII (MI50), 1TB SSD
+	+ Cost: $160 (For the workstation and free replacement of faulty RAM) 
+    + Performance : ~560 GFLOPS CPU, GPUs total ~110 TFLOPS (FP16)
 	+ Components: $80 PSU, 2x $50 V340L, $120 Radeon VII, $10 blower, $34 fans and shrouds, 1TB SSD ($40)
-+ Price : $384
++ Price : $504
 	+ Status: Planned, awaiting implementation
--   * **Solution 3**: Apple MacBook M1, used as a station
--   	   + Cost: $600 (initial), $399 (current)
--	   + Performance: Benchmarked against RK3588S, ~2x faster
--	   + Limitations: No eGPU support, inefficient use
-           (MacBook Air M1 has been removed)
-* **Solution 4**: Yoga 6 with RTX 2060 SUPER, for gaming
-	+ Cost: $150 (banged up,depreciated), $699 (new)
-	+ Performance: Gaming-capable, but limited by GPU and condition
-	+ Components: $30 (M.2 riser and tower heatsink), $200 (RTX 2060 SUPER)-$150 (Adjusted for low VRAM)
+* **Solution 3**: ThinkCentre Tiny (Ryzen PRO 5 2400GE) with RTX 2060 SUPER, for gaming
+	+ Cost: $50 (Used)
+	+ Performance: Mesa NVK and Quad-Core Zen (~130 GFLOPS (14nm))
+	+ Components: $20 (M.2 riser), $200 (RTX 2060 SUPER)-$150 (Adjusted for low VRAM)
 
 **Challenges and Failures**
 
 * Earlier i5-14600K and 7900X builds were returned to Micro Center due to compatibility issues.
 * Dell OptiPlex 7010 SFF: Installed Coreboot, but system crashed with context corruption when using a large eGPU.
-* The Yoga 6 is so banged up and modified with a desktop heatsink and Graphics Card that only one user would likely want it.
+* The Yoga 6 is so banged up and modified with a desktop heatsink and Graphics Card that only one user would likely want it. And now it's dead.
 
 **Notes**
 
@@ -34,4 +30,4 @@
 * Component prices are approximate and based on used market values.
 * Doctrine involves using aftermarket software rather than relying on vendor support.
 * **Total Cost Limit: $1200**
-* **Current Cost : $1613**
+* **Current Cost : $1623**
