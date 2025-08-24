@@ -6,18 +6,17 @@
 * **Solution 2**: Asrock A520M, Ryzen 5500GT, 500GB M.2 SSD, 1TB Old PNY SSD, 24GB Tesla M40
 	+ Cost: $120 (Motherboard) + $110 (CPU) + (64GB RAM is a gift) + $35 (M.2 SSD) + $330 (M40 and waterblock) = $595
 	+ Performance: 1400 MHz, 8 CUs, GPU 
-* **Solution 3**: Celeron N4XXX, Chromebook with Coreboot, RX 570 8GB, GTX 1070 8GB
-	+ Cost: $30 (Chromebook + Switch Card) + $50 (RX 570) + $60 (GTX 1070) = $180
+* **Solution 3**: Celeron N4020, Chromebook with Depthcharge, RX 570 8GB, GTX 1070 8GB
+	+ Cost: $40 (Chromebook + A/E To Key M Adapter + Switch Card) + $50 (RX 570) + $60 (GTX 1070) = $190
 
 **Threshold**
 
 * **Total Budget: $800**
-* **Current price: $1095**
+* **Current price: $1105**
 
 **Additional Components**
 
-* $20 (Router)
-* $50 (A311D Edge SBC) ($1165 total)
+* $20 (Wi-Fi Router)
 
 *** ***
 ---Adjusting for practical value---
@@ -31,7 +30,7 @@
    - P4s are hitting EOL. However for their form factor they are quite efficient despite T4s being superior (and expensive).
      ($200 - $32 - $168)
    - The banged up GTX 1070 is probably already market value ($60).
-     (Total : $860 as of 2025)
+     (Total : $804 as of 2025)
 *** ***
 
 **Notes**
