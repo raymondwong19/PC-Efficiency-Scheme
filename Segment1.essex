@@ -4,14 +4,13 @@
 	+ Cost: $399 (initial bundle), -$200 (CPU sale), +$300 (iGPU swap) = $499
 	+ Performance: +9 TFLOPS GPU, 10% reduced CPU compared to 9700X
 	+ Issues: 2x16GB eGPU limitation due to MMIO and amdgpu bugs
-	+ Components: 12GB Tesla M40 with custom cooler ($70), MI50 ($130), 50cm riser ($25), 25cm M.2 riser ($25), Wathai Fan/Shroud ($25), Workhorse PSU ($40), 1TB/500GB SATA bridged SSDs ($70), Mellanox card ($15)
-  + Price : $899
-* **Solution 2**: Xeon W-2123, 64GB 72-bits DDR4, 2x V340L, 1x Radeon VII (MI50), 1TB SSD
-	+ Cost: $160 (For the workstation and free replacement of faulty RAM) 
-    + Performance : ~560 GFLOPS CPU, GPUs total ~110 TFLOPS (FP16)
-	+ Components: $80 PSU, 2x $50 V340L, $120 Radeon VII, $10 blower, $34 fans and shrouds, 1TB SSD ($40)
-+ Price : $504
-	+ Status: Planned, awaiting implementation
+	+ Components: V340L ($50), 50cm riser ($25), 15cm M.2 riser ($20), Wathai Fan/Shroud ($25), Workhorse PSU ($40), 1TB/500GB SATA/NVMe bridged SSDs ($60), Mellanox card ($15)
+  + Price : $734
+* **Solution 2**: Xeon W-2123, 64GB 72-bits DDR4, 1x V340L, 1x Tesla M40 12GB, 2x Radeon VII/MI50, 1TB SSD, 2x RAID NVMe/SATA 256GB SSD
+	+ Cost: $160 (For the workstation and free replacement of faulty RAM)
+    + Performance : ~560 GFLOPS CPU, GPUs total ~98 TFLOPS (half)
+	+ Components: $80 PSU, 1x $50 V340L, $120 Radeon VII, $130 MI50, $70 Tesla M40, $10 blower, $34 fans and shrouds, 1TB SSD ($40), 256GB SSD x2 ($28)
++ Price : $722
 * **Solution 3**: ThinkCentre Tiny (Ryzen PRO 5 2400GE) with RTX 2060 SUPER, for gaming
 	+ Cost: $50 (Used)
 	+ Performance: Mesa NVK and Quad-Core Zen (~130 GFLOPS (14nm))
@@ -30,4 +29,4 @@
 * Component prices are approximate and based on used market values.
 * Doctrine involves using aftermarket software rather than relying on vendor support.
 * **Total Cost Limit: $1200**
-* **Current Cost : $1623**
+* **Current Cost : $1676**
