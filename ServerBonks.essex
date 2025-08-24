@@ -1,1 +1,40 @@
+I spent a LONG time building a cluster (multiple). And I think all the problemshooting kind of made me dumber. 
+It's kind of narrow and I think my imagination isn't the way it is 5 years ago now.
 
+But I am on the way hopefully to having more experience than others.
+
+There is a reason why servers are servers, standardized even, would still be enterprise level connectors instead of consumer grade. (And they aren't cheap).
+I went and improvised one, initially thinking that Dad's metal rack *is* a good idea. Did I not suspect I would need to maintain it this much? Years even?
+Keep it simple — every extra connector, cable, or feature is another thing you'll have to fix tomorrow. So is my braincells...
+
+1. I brought consumer risers of the 30cm/45cm/50cm length for GPU breakout. The full x16 ones are fat and wide despite being flexible, the M.2 to PCIe ones are slimmer.
+In any case they are not enterprise grade, just some low budget model deemed good enough to sell by a Chinese factory. There are no retiming or standard cable routing, therefore
+for stability I forced them to run at Gen 3 or even Gen 2 speeds, and the cable mess is reduced by the fact that half of them look completely different (and there are just a half dozen).
+The cables came short too because GPUs are mounted all over the place. There are no standard breakout board for me, oh ho ho. Hence the disaster, so many awkward mounts due to mismatched
+riser lengths.
+
+2. Cheap screws can have their heads break off and get stuck in the M.2 standoff. I should remember to screw down every M.2 card, and using zip ties or tape is foolish, for the contact
+is bad, there is no reliable grounding/pressure. And the card won't get detected. Also screw it when it breaks. I shall *always* screw it down and never think I can get away with some
+improvised M.2 card mount.
+
+3. I filed a chassis with a filer without proper cleaning and personal protection. You can imagine how stupid that was.
+
+4. I mixed consumer cables with datacenter cards. Some of the cards with PLX switches are especially wonky. The Radeon Pro with Microchip fanout switch for some reason needed 8-16 lanes.
+If I run on 4 lanes, it just hangs under load and causes the kernel to be "dazed and confused". Many link training hangs occurred as well with one card not being detected at Gen3, and
+is trained and detected as x4 only if the two other ports on the bifurcation card is filled. But it sure is trained and detected as x8 if I force Gen2 even if the other ports are empty.
+
+5. I brought individual cooling shrouds per card. Which wasted alot of space and money after realizing I could just use turbines which basically self direct and even better if they are
+in a case where powerful turbines can just cool them all without shrouds.
+
+6. There is indeed a reason why servers are standardized. Could have been premeasured or planned early to avoid the clutter of mismatched cables. The cheap consumer grade NVMe and x16
+risers sometimes just had their external FDD power break off too. Noisy rails and whine too due to relatively poor grounding in some areas. I have no spare cables or quality cables.
+Cable failures just led to a bunch of downtime.
+
+7. No quick hotswapping or backplane plan. The improvised Dadrack led to lengthly swaps and diagnostics. Regret. It made me dumber too I presume.
+
+8. Used inappropriate screws and drivers leading to stripped heads or sheared heads.
+
+9. Consumer x86 machines have limited MMIO, alot of time was spent working out the memory map in a attempt to avoid processor context corruptions and reboots due to memory conflicts.
+The P520 workstation has no such limit and took in 5 GPUs without issue (and so I said in theory that thing would probably have at least 256GB). The gaming PC can't even have 26GB.
+
+10. Didn't log dmesg/lspci/smartctl during failures == +++ time when troubleshooting.
